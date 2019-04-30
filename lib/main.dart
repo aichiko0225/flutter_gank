@@ -2,6 +2,24 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
 
+class GankApp extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return MaterialApp(
+      title: 'Gank App',
+      routes: {
+        '1': (context) => MyHomePage(),
+        '2': (context) => MyHomePage(),
+        '3': (context) => MyHomePage(),
+        '4': (context) => MyHomePage(),
+      },
+    );
+  }
+}
+
+
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override

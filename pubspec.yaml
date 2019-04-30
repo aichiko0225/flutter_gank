@@ -41,9 +41,9 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #  - images/a_dot_burr.jpeg
-  #  - images/a_dot_ham.jpeg
+  assets:
+   - static/images/favorite_empty.png
+   - static/images/gank.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.io/assets-and-images/#resolution-aware.
@@ -57,16 +57,25 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   # fonts:
-  #   - family: Schyler
+  #   - family: IconFont
   #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
+  #       - asset: static/font/iconfont.ttf
+
+  #   - family: WorkSansSemiBold
   #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
-  #
+  #       - asset: static/font/WorkSans-SemiBold.ttf
+
+  #   - family: WorkSansBold
+  #     fonts:
+  #       - asset: static/font/WorkSans-Bold.ttf
+
+  #   - family: WorkSansMedium
+  #     fonts:
+  #       - asset: static/font/WorkSans-Medium.ttf
+
+  #   - family: WorkSansLight
+  #     fonts:
+  #       - asset: static/font/WorkSans-Light.ttf
+
   # For details regarding fonts from package dependencies,
   # see https://flutter.io/custom-fonts/#from-packages
