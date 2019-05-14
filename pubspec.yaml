@@ -23,7 +23,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
-
+  
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -56,26 +56,26 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: IconFont
-  #     fonts:
-  #       - asset: static/font/iconfont.ttf
+  fonts:
+    - family: IconFont
+      fonts:
+        - asset: static/fonts/iconfont.ttf
 
-  #   - family: WorkSansSemiBold
-  #     fonts:
-  #       - asset: static/font/WorkSans-SemiBold.ttf
+    - family: WorkSansSemiBold
+      fonts:
+        - asset: static/fonts/WorkSans-SemiBold.ttf
 
-  #   - family: WorkSansBold
-  #     fonts:
-  #       - asset: static/font/WorkSans-Bold.ttf
+    - family: WorkSansBold
+      fonts:
+        - asset: static/fonts/WorkSans-Bold.ttf
 
-  #   - family: WorkSansMedium
-  #     fonts:
-  #       - asset: static/font/WorkSans-Medium.ttf
+    - family: WorkSansMedium
+      fonts:
+        - asset: static/fonts/WorkSans-Medium.ttf
 
-  #   - family: WorkSansLight
-  #     fonts:
-  #       - asset: static/font/WorkSans-Light.ttf
+    - family: WorkSansLight
+      fonts:
+        - asset: static/fonts/WorkSans-Light.ttf
 
   # For details regarding fonts from package dependencies,
   # see https://flutter.io/custom-fonts/#from-packages

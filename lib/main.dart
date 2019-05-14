@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gank/pages/page_home.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(GankApp());
 
 class GankApp extends StatelessWidget {
 
@@ -9,12 +10,15 @@ class GankApp extends StatelessWidget {
     // TODO: implement build
     return MaterialApp(
       title: 'Gank App',
+      theme: ThemeData(primarySwatch: Colors.blue),
       routes: {
-        '1': (context) => MyHomePage(),
-        '2': (context) => MyHomePage(),
-        '3': (context) => MyHomePage(),
-        '4': (context) => MyHomePage(),
+        HomePage.ROUTER_NAME: (context) => HomePage(),
+        '1': (context) => MyHomePage(title: '小小的测试一波'),
+        '2': (context) => MyHomePage(title: '小小的测试一波'),
+        '3': (context) => MyHomePage(title: '小小的测试一波'),
+        '4': (context) => MyHomePage(title: '小小的测试一波'),
       },
+      home: HomePage(),
     );
   }
 }
