@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gank/common/event/common_event.dart';
+import 'package:flutter_gank/common/manager/app_manager.dart';
 import 'package:flutter_gank/pages/page_category.dart';
 import 'package:flutter_gank/pages/page_favorite.dart';
 import 'package:flutter_gank/pages/page_new.dart';
@@ -8,7 +10,7 @@ import 'package:flutter_gank/views/widgets/widget_icon_font.dart';
 
 class HomePage extends StatefulWidget {
 
-  static const String ROUTER_NAME = '';
+  static const String ROUTER_NAME = 'HomePage';
 
   @override
   State<StatefulWidget> createState() {
@@ -27,6 +29,7 @@ class _HomePageState extends State<HomePage> {
     // TODO: implement initState
     super.initState();
     _pageController = PageController(initialPage: 0);
+    _registerEventListener();
   }
 
   @override
@@ -56,6 +59,18 @@ class _HomePageState extends State<HomePage> {
         )
       ],
     );
+  }
+
+
+  ///注册事件监听器
+  void _registerEventListener() {
+    AppManager.eventBus.on<RefreshNewPageEvent>().listen((event) {
+      if (mounted) {
+        setState(() {
+          _currentDate = event.date;
+        });
+      }
+    });
   }
   ///build AppBar.
   Widget _buildAppBar() {

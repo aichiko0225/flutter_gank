@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gank/pages/page_category.dart';
+import 'package:flutter_gank/pages/page_favorite.dart';
 import 'package:flutter_gank/pages/page_home.dart';
+import 'package:flutter_gank/pages/page_new.dart';
+import 'package:flutter_gank/pages/page_welfare.dart';
 
 void main() => runApp(GankApp());
 
@@ -13,10 +17,10 @@ class GankApp extends StatelessWidget {
       theme: ThemeData(primarySwatch: Colors.blue),
       routes: {
         HomePage.ROUTER_NAME: (context) => HomePage(),
-        '1': (context) => MyHomePage(title: '小小的测试一波'),
-        '2': (context) => MyHomePage(title: '小小的测试一波'),
-        '3': (context) => MyHomePage(title: '小小的测试一波'),
-        '4': (context) => MyHomePage(title: '小小的测试一波'),
+        CategoryPage.ROUTER_NAME: (context) => CategoryPage(),
+        FavoritePage.ROUTER_NAME: (context) => FavoritePage(),
+        WelfarePage.ROUTER_NAME: (context) => WelfarePage(),
+        NewPage.ROUTER_NAME: (context) => NewPage(),
       },
       home: HomePage(),
     );
