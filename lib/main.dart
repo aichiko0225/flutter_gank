@@ -39,6 +39,7 @@ class GankApp extends StatelessWidget {
             localizationsDelegates: [
               GlobalMaterialLocalizations.delegate,
               GlobalWidgetsLocalizations.delegate,
+              GankLocalizationsDelegate.delegate,
             ],
             locale: store.state.locale,
             title: 'Gank App',

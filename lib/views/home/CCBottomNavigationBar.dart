@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gank/utils/common_utils.dart';
 
 class CCBottomNavigationBar extends StatefulWidget {
 
@@ -24,25 +25,25 @@ class _BottomNavigationBarState extends State<CCBottomNavigationBar> {
       ///最新
       BottomNavigationBarItem(
         icon: Icon(IconData(0xe67f, fontFamily: 'IconFont')),
-        title: Text('最新'),
+        title: Text(CommonUtils.getLocale(context).gankNew),
       ),
 
       ///分类
       BottomNavigationBarItem(
         icon: Icon(IconData(0xe603, fontFamily: 'IconFont')),
-        title: Text('分类'),
+        title: Text(CommonUtils.getLocale(context).gankCategory),
       ),
 
       ///妹纸
       BottomNavigationBarItem(
         icon: Icon(IconData(0xe637, fontFamily: 'IconFont')),
-        title: Text('妹纸'),
+        title: Text(CommonUtils.getLocale(context).girl),
       ),
 
       ///收藏
       BottomNavigationBarItem(
         icon: Icon(Icons.favorite),
-        title: Text('收藏'),
+        title: Text(CommonUtils.getLocale(context).gankFavorite),
       ),
     ];
   }

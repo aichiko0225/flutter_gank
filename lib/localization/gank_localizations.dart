@@ -17,7 +17,8 @@ class GankLocalizations {
   };
 
   StringBase get currentLocalized {
-    return _localizedValues[locale.languageCode];
+    // return _localizedValues[locale.languageCode];
+    return _localizedValues['zh'];
   }
 
   static GankLocalizations of(BuildContext context) {

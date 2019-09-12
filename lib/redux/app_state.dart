@@ -16,7 +16,7 @@ class AppState {
   Locale platformLocale;
 
   ///构造方法
-  AppState({this.themeData, this.locale});
+  AppState({this.themeData, this.locale = const Locale('zh', 'CH')});
 }
 
 ///创建 Reducer
