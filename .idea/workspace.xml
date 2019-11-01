@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d9114f8-1ea4-48a7-a01c-be48c0237a51" name="Default" comment="update pack &amp;&amp; add request">
-      <change afterPath="$PROJECT_DIR$/lib/utils/time_utils.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/views/widgets/widget_list_item.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/views/widgets/widget_list_title.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/pages/page_webview.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ios/Flutter/App.framework/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/App.framework/flutter_assets/kernel_blob.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/common/manager/app_manager.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/common/manager/app_manager.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/page_new.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/page_new.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/page_welfare.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/page_welfare.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/views/widgets/widget_list_item.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/widgets/widget_list_item.dart" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -118,7 +116,7 @@
       <workItem from="1572510878544" duration="1000" />
       <workItem from="1572510885517" duration="3246000" />
       <workItem from="1572575438993" duration="4920000" />
-      <workItem from="1572581405682" duration="5386000" />
+      <workItem from="1572581405682" duration="10113000" />
     </task>
     <task id="LOCAL-00001" summary="update pack &amp;&amp; add request">
       <created>1572581837935</created>

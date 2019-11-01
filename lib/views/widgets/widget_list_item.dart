@@ -2,6 +2,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gank/common/model/gank_item.dart';
+import 'package:flutter_gank/pages/page_webview.dart';
 import 'package:flutter_gank/utils/time_utils.dart';
 
 class GankListItem extends StatefulWidget {
@@ -23,9 +24,8 @@ class GankListItemState extends State<GankListItem> {
     // TODO: implement build
     return GestureDetector(
       onTap: () {
-        // ignore: missing_return
         Navigator.of(context).push(MaterialPageRoute(builder: (context) {
-
+          return WebViewPage(widget.gankItem);
         }));
       },
       child: Container(
