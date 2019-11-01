@@ -1,9 +1,13 @@
+import 'dart:math';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter_gank/api/gank_api.dart';
 import 'package:flutter_gank/common/model/gank_item.dart';
 import 'package:flutter_gank/common/model/gank_post.dart';
-import "package:pull_to_refresh/pull_to_refresh.dart";
+import 'package:flutter_gank/views/widgets/widget_list_item.dart';
+import 'package:flutter_gank/views/widgets/widget_list_title.dart';
+import 'package:pull_to_refresh/pull_to_refresh.dart';
+
 
 class NewPage extends StatefulWidget {
   static const String ROUTER_NAME = 'NewPage';
@@ -67,8 +71,25 @@ class NewPageState extends State<NewPage> with AutomaticKeepAliveClientMixin {
     return ListView.builder(
         itemCount: _gankItems == null ? 0 : _gankItems.length + 1,
         itemBuilder: (BuildContext context, int index) {
-          return null;
+          if (index == 0) {
+            return _buildImageBanner(context);
+          } else {
+            var gankItem = _gankItems[index - 1];
+            return gankItem.isTitle ? GankItemTitle(gankItem.category) : GankListItem(gankItem);
+          }
       },
+    );
+  }
+  GestureDetector _buildImageBanner(BuildContext context) {
+    return GestureDetector(
+      onTap: (){
+
+      },
+      child: CachedNetworkImage(
+        height: 200,
+        imageUrl: _girlImage,
+        fit: BoxFit.cover,
+      ),
     );
   }
 

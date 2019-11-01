@@ -26,7 +26,26 @@
 //import 'package:url_launcher/url_launcher.dart';
 //
 //import 'package:package_info/package_info.dart';
-//
+
+import 'package:flutter/cupertino.dart';
+import 'dart:io';
+import 'package:event_bus/event_bus.dart';
+import 'package:flutter_gank/redux/app_state.dart';
+
+class AppManager {
+  static EventBus eventBus = EventBus();
+  static initApp(BuildContext context) async {
+    try {
+
+
+    } catch(e) {
+
+    }
+  }
+
+}
+
+
 //class AppManager {
 //  static EventBus eventBus = EventBus();
 //
