@@ -1,9 +1,11 @@
 import 'dart:math';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_gank/api/gank_api.dart';
 import 'package:flutter_gank/common/model/gank_item.dart';
 import 'package:flutter_gank/common/model/gank_post.dart';
+import 'package:flutter_gank/pages/page_gallery.dart';
 import 'package:flutter_gank/views/widgets/widget_list_item.dart';
 import 'package:flutter_gank/views/widgets/widget_list_title.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
@@ -82,8 +84,10 @@ class NewPageState extends State<NewPage> with AutomaticKeepAliveClientMixin {
   }
   GestureDetector _buildImageBanner(BuildContext context) {
     return GestureDetector(
-      onTap: (){
-
+      onTap: () {
+        Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+          return GalleryPage([_girlImage], '');
+        }));
       },
       child: CachedNetworkImage(
         height: 200,

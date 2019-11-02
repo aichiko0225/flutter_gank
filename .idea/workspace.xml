@@ -4,12 +4,12 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d9114f8-1ea4-48a7-a01c-be48c0237a51" name="Default" comment="update pack &amp;&amp; add request">
-      <change afterPath="$PROJECT_DIR$/lib/pages/page_webview.dart" afterDir="false" />
+    <list default="true" id="5d9114f8-1ea4-48a7-a01c-be48c0237a51" name="Default" comment="首页 妹子布局 完成">
+      <change afterPath="$PROJECT_DIR$/lib/pages/page_gallery.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ios/Flutter/App.framework/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/App.framework/flutter_assets/kernel_blob.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/page_new.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/page_new.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/pages/page_welfare.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/page_welfare.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/widgets/widget_list_item.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/widgets/widget_list_item.dart" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,10 +47,10 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -116,7 +116,7 @@
       <workItem from="1572510878544" duration="1000" />
       <workItem from="1572510885517" duration="3246000" />
       <workItem from="1572575438993" duration="4920000" />
-      <workItem from="1572581405682" duration="10113000" />
+      <workItem from="1572581405682" duration="12855000" />
     </task>
     <task id="LOCAL-00001" summary="update pack &amp;&amp; add request">
       <created>1572581837935</created>
@@ -125,11 +125,28 @@
       <option name="project" value="LOCAL" />
       <updated>1572581837935</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="首页 妹子布局 完成">
+      <created>1572600803448</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1572600803448</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -147,6 +164,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="update pack &amp;&amp; add request" />
-    <option name="LAST_COMMIT_MESSAGE" value="update pack &amp;&amp; add request" />
+    <MESSAGE value="首页 妹子布局 完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="首页 妹子布局 完成" />
   </component>
 </project>

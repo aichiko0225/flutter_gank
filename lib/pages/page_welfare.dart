@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_gank/api/gank_api.dart';
 import 'package:flutter_gank/common/constant/strings.dart';
 import 'package:flutter_gank/common/model/gank_item.dart';
+import 'package:flutter_gank/pages/page_gallery.dart';
 import 'package:flutter_gank/utils/common_utils.dart';
 import 'package:flutter_gank/utils/time_utils.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
@@ -63,11 +64,10 @@ class _WelfarePageState extends State<WelfarePage> with AutomaticKeepAliveClient
                     return GestureDetector(
                       onTap: () {
                         Navigator.of(context)
-                            // ignore: missing_return
                             .push(MaterialPageRoute(builder: (context) {
-//                          return GalleryPage(
-//                              [gankItem.url.replaceFirst("large", "mw690")],
-//                              gankItem.desc);
+                          return GalleryPage(
+                              [gankItem.url.replaceFirst("large", "mw690")],
+                              gankItem.desc);
                         }));
                       },
                       child: Padding(
