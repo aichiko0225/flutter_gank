@@ -8,7 +8,9 @@ class GankConfig {
   static const USER_INFO = "user-info";
   static const THEME_COLOR = "theme-color";
   static const LOCALE = "locale";
-  
+  static const CONNECT_TIMEOUT = 15000;
+  static const RECEIVE_TIMEOUT = 15000;
+
   ///github相关
   static const CLIENT_ID = '750419fa775225670b05';
   static const CLIENT_SECRET = '6f12853d2f72abbd13548239cf8040783e6e47df';

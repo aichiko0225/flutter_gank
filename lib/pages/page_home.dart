@@ -64,13 +64,13 @@ class _HomePageState extends State<HomePage> {
 
   ///注册事件监听器
   void _registerEventListener() {
-    AppManager.eventBus.on<RefreshNewPageEvent>().listen((event) {
-      if (mounted) {
-        setState(() {
-          _currentDate = event.date;
-        });
-      }
-    });
+//    AppManager.eventBus.on<RefreshNewPageEvent>().listen((event) {
+//      if (mounted) {
+//        setState(() {
+//          _currentDate = event.date;
+//        });
+//      }
+//    });
   }
   ///build AppBar.
   Widget _buildAppBar() {
